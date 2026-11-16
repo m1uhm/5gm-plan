@@ -1,0 +1,15 @@
+# 5GM weekly plan - read by 5GM_AutoPlan_EA (v1.10+). Times are UK time.
+# Edit this file on GitHub each week; the EA re-downloads it every 15 minutes.
+week=2026-11-16
+news=2026-11-17 07:00|note=UK labour market
+news=2026-11-17 13:30|note=US Retail Sales
+news=2026-11-18 07:00|note=UK CPI
+news=2026-11-18 19:00|note=FOMC Minutes
+news=2026-11-19 13:30|note=US Jobless Claims
+news=2026-11-20 07:00|note=UK Retail Sales
+news=2026-11-20 09:30|note=UK PMI
+news=2026-11-20 14:45|note=US PMI
+# Preferred: DXY higher -> GBPUSD sell from H4/D FVG after tap + H4 close back below 1.3220
+scenario=GU_A|symbol=GBPUSD|dir=SELL|zone=1.32390-1.32663|trigger=1.32200|entry=1.32450|tf=H4|invalid=1.32920|sl=1.32950|tp1=1.31420|tp2=1.30150|risk=1.0|dxy_kill_below=102.962|dxy_exit_above=104.370|from=2026-11-17 00:00|to=2026-11-19 22:00|close_by=2026-11-20 16:00
+# Alternative: only if DXY daily closes below 102.96 -> EURUSD buy from monthly FVG, single target (draw 1.1140)
+scenario=EU_B|symbol=EURUSD|dir=BUY|zone=1.09850-1.10240|trigger=1.10460|entry=1.10400|tf=H4|invalid=1.09850|sl=1.09820|tp1=1.11400|tp2=1.11400|risk=1.0|dxy_need_below=102.962|dxy_kill_above=103.331|from=2026-11-17 00:00|to=2026-11-19 22:00|close_by=2026-11-20 16:00
