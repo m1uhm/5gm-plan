@@ -1,5 +1,5 @@
 # 5GM weekly plan - read by 5GM_AutoPlan_EA (v1.10+). Times are UK time.
-# Revision 3 (Tue 17 Nov ~16:45 UK): DXY tagged its weekly bear FVG (103.78) on Retail Sales; decision at DXY POI 1 103.242-103.331.
+# Revision 3.1 (Tue 17 Nov ~17:15 UK): DXY tagged its weekly bear FVG (103.78) on Retail Sales; decision at DXY POI 1 103.242-103.331.
 week=2026-11-16
 news=2026-11-18 07:00|note=UK CPI
 news=2026-11-18 15:00|note=BoE Bailey (unconfirmed)
@@ -7,6 +7,6 @@ news=2026-11-18 19:00|note=FOMC Minutes
 news=2026-11-19 13:30|note=US Jobless Claims
 news=2026-11-20 07:00|note=UK Retail Sales
 # A (preferred): DXY holds POI 1 -> GBPUSD sell after HOTW in 1.3251-1.3266 and H4 close back below 1.3220
-scenario=GU_A|symbol=GBPUSD|dir=SELL|zone=1.32510-1.32663|trigger=1.32200|entry=1.32500|tf=H4|invalid=1.32920|sl=1.32950|tp1=1.31720|tp2=1.31420|risk=1.0|dxy_kill_below=103.242|dxy_exit_above=103.780|from=2026-11-17 17:00|to=2026-11-19 22:00|close_by=2026-11-20 16:00
-# B: only after a DXY daily close below 103.242 (HOTW 103.78 confirmed) -> EURUSD buy on H4 close above Monday high 1.10306
-scenario=EU_B|symbol=EURUSD|dir=BUY|zone=1.09650-1.10306|trigger=1.10306|entry=1.10050|tf=H4|invalid=1.09650|sl=1.09650|tp1=1.10780|tp2=1.11020|risk=1.0|dxy_need_below=103.242|dxy_kill_above=103.331|from=2026-11-17 17:00|to=2026-11-19 22:00|close_by=2026-11-20 16:00
+scenario=GU_A|symbol=GBPUSD|dir=SELL|zone=1.32510-1.32663|trigger=1.32200|entry=1.32500|tf=H4|invalid=1.32920|sl=1.32950|tp1=1.31720|tp2=1.31420|risk=1.0|dxy_kill_below=103.242|dxy_exit_above=103.842|from=2026-11-17 17:00|to=2026-11-19 22:00|close_by=2026-11-20 16:00
+# B: only after a DXY daily close below 103.242 (HOTW 103.78 confirmed) -> GBPUSD buy on H4 close above week high 1.32245 (EURGBP falling = long GU)
+scenario=GU_B|symbol=GBPUSD|dir=BUY|zone=1.31660-1.32245|trigger=1.32245|entry=1.31980|tf=H4|invalid=1.31660|sl=1.31660|tp1=1.32500|tp2=1.32820|risk=1.0|dxy_need_below=103.242|dxy_kill_above=103.331|dxy_exit_below=102.801|from=2026-11-17 17:00|to=2026-11-19 22:00|close_by=2026-11-20 16:00
